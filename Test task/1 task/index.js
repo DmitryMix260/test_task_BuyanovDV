@@ -13,6 +13,7 @@ const animateTimer = createTimerAnimator();
 inputEl.addEventListener('input', () => {
   // Очистите input так, чтобы в значении
   // оставались только числа
+  e.target.value = e.target.value.replace(/\D/g, "");
 });
 
 buttonEl.addEventListener('click', () => {

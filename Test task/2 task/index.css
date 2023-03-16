@@ -10,8 +10,8 @@
   --font-montserrat: "Montserrat", sans-serif;
   --fs-base: 16px;
   --fs-normal: 18px;
-  --fs-normal: 48px;
-  --weigth-lighte: 300;
+  --fs-bold: 48px;
+  --weigth-light: 300;
   --weigth-regular: 400;
   --weigth-medium: 500;
   --weigth-bold: 700;
@@ -25,9 +25,10 @@
 body {
   margin: 0;
   font-family: var(--font-inter);
-  font-weight: var(--weigth-black);
+  font-weight: var(--weigth-medium);
   font-size: var(--fs-base);
-  color: light-text;
+  color: var(--light-text);
+  background: #1e1e1e;
 }
 
 .container {
@@ -35,4 +36,43 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
-.header{}
+.header {
+  display: flex;
+}
+.logo_weblex {
+  max-width: 140px;
+}
+.logo_weblex_text {
+  font-family: var(--font-montserrat);
+  font-weight: var(--weigth-light);
+  font-size: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding-left: 52px;
+  padding-right: 137px;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--light-text);
+}
+
+.menu a:not(:last-child) {
+  padding-right: 30px;
+}
+.contacts img {
+  display: block;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts div:first-child {
+  padding-right: 48px;
+}
+
+.contacts img:not(:last-child) {
+  padding-right: 34px;
+}
